@@ -1,0 +1,165 @@
+/* ===================================================
+   SHOPPING CART STYLES (Cart.css)
+   Natural agricultural theme - Third Design Style
+=================================================== */
+
+.cart-page {
+  padding-bottom: 56px;
+}
+
+.cart-title {
+  font-size: 26px;
+  font-weight: 700;
+  color: var(--primary-dark);
+  margin-bottom: 4px;
+}
+
+.cart-sub {
+  font-size: 14px;
+  color: var(--text-muted);
+  margin-bottom: 24px;
+}
+
+.cart-layout {
+  display: grid;
+  grid-template-columns: 1fr 340px;
+  gap: 28px;
+  align-items: flex-start;
+}
+
+/* Items Table Box */
+.cart-items-card {
+  background-color: var(--color-white);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-md);
+  overflow-x: auto;
+  box-shadow: var(--shadow-sm);
+}
+
+.cart-table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+  font-size: 14px;
+}
+
+.cart-table th {
+  background-color: var(--primary-light);
+  color: var(--primary-dark);
+  font-weight: 600;
+  padding: 12px 16px;
+  border-bottom: 1px solid var(--border-color);
+  white-space: nowrap;
+}
+
+.cart-table td {
+  padding: 14px 16px;
+  border-bottom: 1px solid var(--border-color);
+  vertical-align: middle;
+}
+
+.cart-table tr:last-child td {
+  border-bottom: none;
+}
+
+.cart-product-cell {
+  display: flex;
+  flex-direction: column;
+}
+
+.cart-product-title {
+  font-weight: 600;
+  color: var(--primary-dark);
+}
+
+.cart-farmer-label {
+  font-size: 12px;
+  color: var(--text-muted);
+}
+
+/* Quantity Counter in Table */
+.cart-qty-widget {
+  display: flex;
+  align-items: center;
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-sm);
+  width: fit-content;
+}
+
+.cart-qty-btn {
+  background: none;
+  border: none;
+  width: 28px;
+  height: 28px;
+  cursor: pointer;
+  font-weight: 700;
+  color: var(--primary-dark);
+}
+
+.cart-qty-btn:hover {
+  background-color: var(--primary-light);
+}
+
+.cart-qty-val {
+  width: 34px;
+  text-align: center;
+  font-weight: 600;
+  font-size: 13px;
+}
+
+.cart-remove-btn {
+  background: none;
+  border: none;
+  color: var(--danger-color);
+  font-size: 12px;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.cart-remove-btn:hover {
+  text-decoration: underline;
+}
+
+/* Summary Card */
+.cart-summary-card {
+  background-color: var(--color-white);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-md);
+  padding: 24px;
+  box-shadow: var(--shadow-sm);
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.cart-summary-head {
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--primary-dark);
+  border-bottom: 1px solid var(--border-color);
+  padding-bottom: 12px;
+}
+
+.cart-summary-row {
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+  color: var(--text-main);
+}
+
+.cart-summary-total-row {
+  display: flex;
+  justify-content: space-between;
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--primary-dark);
+  border-top: 1px solid var(--border-color);
+  padding-top: 12px;
+}
+
+@media (max-width: 868px) {
+  .cart-layout {
+    grid-template-columns: 1fr;
+  }
+}
+

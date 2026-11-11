@@ -1,0 +1,37 @@
+/* ===================================================
+   NOT FOUND STYLES (NotFound.css)
+=================================================== */
+
+.notfound-page {
+  padding: 80px 20px;
+  text-align: center;
+}
+
+.notfound-card {
+  max-width: 480px;
+  margin: 0 auto;
+  background-color: var(--color-white);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-lg);
+  padding: 40px 24px;
+  box-shadow: var(--shadow-sm);
+}
+
+.notfound-icon {
+  font-size: 48px;
+  margin-bottom: 16px;
+}
+
+.notfound-title {
+  font-size: 26px;
+  font-weight: 700;
+  color: var(--primary-dark);
+  margin-bottom: 8px;
+}
+
+.notfound-desc {
+  font-size: 14px;
+  color: var(--text-muted);
+  margin-bottom: 24px;
+}
+

@@ -1,0 +1,121 @@
+/* ===================================================
+   MARKET PRICES STYLES (MarketPrices.css)
+   Natural agricultural theme - Third Design Style
+=================================================== */
+
+.prices-page {
+  padding-bottom: 48px;
+}
+
+.prices-header {
+  margin-bottom: 24px;
+}
+
+.prices-title {
+  font-size: 28px;
+  font-weight: 700;
+  color: var(--primary-dark);
+  margin-bottom: 6px;
+}
+
+.prices-subtitle {
+  font-size: 14px;
+  color: var(--text-muted);
+}
+
+.prices-toolbar {
+  background-color: var(--color-white);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-md);
+  padding: 14px 18px;
+  margin-bottom: 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.prices-search {
+  flex: 1;
+  min-width: 200px;
+}
+
+.prices-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 20px;
+}
+
+.price-card {
+  background-color: var(--color-white);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-md);
+  padding: 20px;
+  box-shadow: var(--shadow-sm);
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  transition: transform 0.15s ease, border-color 0.15s ease;
+}
+
+.price-card:hover {
+  transform: translateY(-2px);
+  border-color: var(--primary-green);
+}
+
+.price-card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  border-bottom: 1px solid var(--border-color);
+  padding-bottom: 10px;
+}
+
+.price-card-crop-name {
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--primary-dark);
+}
+
+.price-tiers-list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  font-size: 13px;
+}
+
+.price-tier-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 6px 8px;
+  border-radius: var(--radius-sm);
+  background-color: var(--bg-page);
+}
+
+.price-tier-label {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  color: var(--text-main);
+  font-weight: 500;
+}
+
+.price-tier-val {
+  font-weight: 700;
+}
+
+.val-high { color: #1e8449; }
+.val-good { color: #27ae60; }
+.val-avg { color: #d68910; }
+.val-low { color: #c0392b; }
+
+.price-card-footer {
+  font-size: 11px;
+  color: var(--text-muted);
+  text-align: right;
+  border-top: 1px dashed var(--border-color);
+  padding-top: 8px;
+}
+

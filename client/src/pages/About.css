@@ -1,0 +1,82 @@
+/* ===================================================
+   ABOUT PAGE STYLES (About.css)
+   Natural agricultural theme - Third Design Style
+=================================================== */
+
+.about-page {
+  padding-bottom: 56px;
+  max-width: 860px;
+}
+
+.about-hero {
+  text-align: center;
+  margin-bottom: 36px;
+}
+
+.about-title {
+  font-size: 32px;
+  font-weight: 700;
+  color: var(--primary-dark);
+  margin-bottom: 8px;
+}
+
+.about-subtitle {
+  font-size: 15px;
+  color: var(--text-muted);
+  line-height: 1.6;
+}
+
+.about-card {
+  background-color: var(--color-white);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-lg);
+  padding: 32px;
+  margin-bottom: 24px;
+  box-shadow: var(--shadow-sm);
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.about-card h3 {
+  font-size: 20px;
+  color: var(--primary-dark);
+}
+
+.about-card p {
+  font-size: 14px;
+  color: #444;
+  line-height: 1.7;
+}
+
+.about-features-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+  margin-top: 8px;
+}
+
+.about-feature-box {
+  background-color: var(--bg-page);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-sm);
+  padding: 16px;
+}
+
+.about-feature-box h4 {
+  font-size: 15px;
+  color: var(--primary-dark);
+  margin-bottom: 6px;
+}
+
+.about-feature-box p {
+  font-size: 13px;
+  color: var(--text-muted);
+}
+
+@media (max-width: 600px) {
+  .about-features-grid {
+    grid-template-columns: 1fr;
+  }
+}
+

@@ -1,0 +1,106 @@
+/* ===================================================
+   REGISTER PAGE STYLES (Register.css)
+   Natural agricultural theme
+=================================================== */
+
+.register-page {
+  min-height: calc(100vh - 180px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 20px;
+}
+
+.register-card {
+  background-color: var(--color-white);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-lg);
+  width: 100%;
+  max-width: 520px;
+  padding: 36px 32px;
+  box-shadow: var(--shadow-md);
+}
+
+.register-header {
+  text-align: center;
+  margin-bottom: 24px;
+}
+
+.register-title {
+  font-size: 24px;
+  font-weight: 700;
+  color: var(--primary-dark);
+  margin-bottom: 4px;
+}
+
+.register-subtitle {
+  font-size: 13px;
+  color: var(--text-muted);
+}
+
+.register-form-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+}
+
+.register-role-select-box {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+  margin-bottom: 16px;
+}
+
+.role-card-btn {
+  border: 1px solid var(--border-color);
+  background-color: var(--bg-page);
+  border-radius: var(--radius-md);
+  padding: 12px;
+  text-align: left;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  transition: all 0.15s ease;
+}
+
+.role-card-btn.active {
+  border-color: var(--primary-green);
+  background-color: var(--primary-light);
+  box-shadow: 0 0 0 2px rgba(77, 139, 69, 0.2);
+}
+
+.role-card-title {
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--primary-dark);
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.role-card-desc {
+  font-size: 11px;
+  color: var(--text-muted);
+}
+
+.register-footer {
+  margin-top: 24px;
+  padding-top: 16px;
+  border-top: 1px solid var(--border-color);
+  text-align: center;
+  font-size: 13px;
+  color: var(--text-muted);
+}
+
+.register-footer a {
+  color: var(--primary-green);
+  font-weight: 600;
+}
+
+@media (max-width: 600px) {
+  .register-form-grid {
+    grid-template-columns: 1fr;
+  }
+}
+

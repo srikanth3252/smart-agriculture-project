@@ -1,0 +1,170 @@
+/* ===================================================
+   PRODUCTS MARKETPLACE STYLES (Products.css)
+   Third Design Style - Clean, natural, functional
+=================================================== */
+
+.products-page {
+  padding-bottom: 48px;
+}
+
+.products-header {
+  margin-bottom: 28px;
+}
+
+.products-title {
+  font-size: 28px;
+  font-weight: 700;
+  color: var(--primary-dark);
+  margin-bottom: 6px;
+}
+
+.products-subtitle {
+  font-size: 14px;
+  color: var(--text-muted);
+}
+
+/* Layout: Sidebar Filter + Product Grid */
+.products-layout {
+  display: grid;
+  grid-template-columns: 260px 1fr;
+  gap: 28px;
+  align-items: flex-start;
+}
+
+/* Filters Sidebar */
+.products-filter-card {
+  background-color: var(--color-white);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-md);
+  padding: 20px;
+  box-shadow: var(--shadow-sm);
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.filter-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid var(--border-color);
+  padding-bottom: 12px;
+}
+
+.filter-header h3 {
+  font-size: 16px;
+  color: var(--primary-dark);
+}
+
+.filter-reset-btn {
+  background: none;
+  border: none;
+  color: var(--primary-green);
+  font-size: 12px;
+  font-weight: 600;
+  cursor: pointer;
+  padding: 0;
+}
+
+.filter-reset-btn:hover {
+  text-decoration: underline;
+}
+
+.filter-group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.filter-label {
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--text-main);
+}
+
+.filter-price-inputs {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+.filter-price-inputs span {
+  color: var(--text-muted);
+  font-size: 13px;
+}
+
+/* Main Content Area */
+.products-main {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* Search and Sort Toolbar */
+.products-toolbar {
+  background-color: var(--color-white);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-md);
+  padding: 14px 18px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.products-search-wrap {
+  flex: 1;
+  min-width: 220px;
+  position: relative;
+}
+
+.products-search-input {
+  width: 100%;
+  padding: 8px 12px;
+  font-size: 14px;
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-sm);
+  outline: none;
+}
+
+.products-search-input:focus {
+  border-color: var(--primary-green);
+}
+
+.products-sort-wrap {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 13px;
+  color: var(--text-muted);
+}
+
+.products-sort-select {
+  padding: 6px 10px;
+  font-size: 13px;
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-sm);
+  background-color: var(--color-white);
+  color: var(--text-main);
+}
+
+.products-results-count {
+  font-size: 13px;
+  color: var(--text-muted);
+  font-weight: 500;
+}
+
+/* Products Grid */
+.products-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 20px;
+}
+
+@media (max-width: 868px) {
+  .products-layout {
+    grid-template-columns: 1fr;
+  }
+}
+
