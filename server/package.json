@@ -1,9 +1,10 @@
+
 {
   "name": "server",
   "version": "1.0.0",
-<<<<<<< HEAD
   "description": "Farmer Marketplace Node.js + Express + MySQL REST API",
   "main": "server.js",
+  "type": "commonjs",
   "scripts": {
     "start": "node server.js",
     "dev": "node server.js",
@@ -27,20 +28,5 @@
     "jsonwebtoken": "^9.0.3",
     "multer": "^2.5.0",
     "mysql2": "^3.24.6"
-=======
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "type": "commonjs",
-  "dependencies": {
-    "cors": "^2.8.6",
-    "express": "^5.2.1",
-    "mongoose": "^9.5.0"
->>>>>>> 146d00b (first commit)
   }
 }
