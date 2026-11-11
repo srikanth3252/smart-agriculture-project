@@ -94,8 +94,8 @@ CLIENT_URL=http://localhost:3000
 The `client/.env` file is already set for local development:
 
 ```env
-REACT_APP_API_URL=http://localhost:5000/api
-REACT_APP_SERVER_URL=http://localhost:5000
+REACT_APP_API_URL=https://smart-agriculture-project.onrender.com/api
+REACT_APP_SERVER_URL=https://smart-agriculture-project.onrender.com
 ```
 
 ### 5. Initialize the database

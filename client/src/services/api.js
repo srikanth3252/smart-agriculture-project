@@ -1,5 +1,5 @@
-const API_BASE_URL = process.env.REACT_APP_API_URL || 'http://localhost:5000/api';
-export const SERVER_STATIC_URL = process.env.REACT_APP_SERVER_URL || 'http://localhost:5000';
+const API_BASE_URL = process.env.REACT_APP_API_URL || 'https://smart-agriculture-project.onrender.com/api';
+export const SERVER_STATIC_URL = process.env.REACT_APP_SERVER_URL || 'https://smart-agriculture-project.onrender.com';
 
 export async function request(endpoint, options = {}) {
   const url = `${API_BASE_URL}${endpoint}`;
