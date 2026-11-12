@@ -26,19 +26,25 @@ app.use(helmet({
 }));
 
 // CORS configuration
-const allowedOrigin = process.env.CLIENT_URL || 'http://localhost:3000';
+// CORS configuration
+const allowedOrigins = [
+    'https://smart-agriculture-project.netlify.app',
+    'http://localhost:3000',
+    'http://127.0.0.1:3000'
+];
 
 app.use(cors({
-    origin: allowedOrigin === '*' ? true : [
-        allowedOrigin,
-        'http://localhost:3000',
-        'http://127.0.0.1:3000'
-    ],
+    origin: function (origin, callback) {
+        if (!origin || allowedOrigins.includes(origin)) {
+            return callback(null, true);
+        }
+
+        return callback(new Error(`CORS blocked for origin: ${origin}`));
+    },
     credentials: true,
-    methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
+    methods: ['GET', 'POST', 'PUT', 'PATCH', 'DELETE', 'OPTIONS'],
     allowedHeaders: ['Content-Type', 'Authorization']
 }));
-
 // Request parsing
 app.use(express.json({ limit: '10mb' }));
 app.use(express.urlencoded({ extended: true, limit: '10mb' }));
